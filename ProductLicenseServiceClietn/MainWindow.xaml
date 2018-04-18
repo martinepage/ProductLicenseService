@@ -1,0 +1,28 @@
+﻿<Window x:Class="ProductLicenseServiceClietn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductLicenseServiceClietn"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="0,0,0,4.8" HorizontalAlignment="Left" Width="515">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="262*"/>
+            <ColumnDefinition Width="253*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="label" Content="Product Name:" HorizontalAlignment="Left" Margin="24,30,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
+        <Label x:Name="label_Copy" Content="Catalog Version:" HorizontalAlignment="Left" Margin="24,80,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
+        <TextBox x:Name="ProductName" HorizontalAlignment="Left" Height="23" Margin="132,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="CatalogVersion" HorizontalAlignment="Left" Height="23" Margin="132,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Acquire" Content="Request License" HorizontalAlignment="Left" Margin="81,157,0,0" VerticalAlignment="Top" Width="103" RenderTransformOrigin="1.718,0.417" Height="19" Click="Acquire_Click"/>
+        <TextBox x:Name="StatusBox" HorizontalAlignment="Left" Height="265" Margin="18.6,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="224" Grid.Column="1" TextChanged="textBox_TextChanged"/>
+        <Label x:Name="label1" Content="Status:" Grid.Column="1" HorizontalAlignment="Left" Margin="18.6,10,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Button x:Name="ReleaseLicense" Content="Release License" HorizontalAlignment="Left" Margin="81,195,0,0" VerticalAlignment="Top" Width="103" Click="ReleaseLicense_Click"/>
+
+    </Grid>
+</Window>
